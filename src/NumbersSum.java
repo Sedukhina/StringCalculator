@@ -8,8 +8,11 @@ public class NumbersSum {
     int Add(){
         int sum = 0;
         String[] numbersSeparated = numbers.split(",");
-        for(String number : numbersSeparated) {
-            sum += Integer.parseInt(number);
+        for(String numbers2 : numbersSeparated) {
+            String[] numbersSeparated2 = numbers2.split("\\\\n");
+            for(String number : numbersSeparated2) {
+                sum += Integer.parseInt(number);
+            }
         }
         return sum;
     }
